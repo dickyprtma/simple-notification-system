@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "76ff7dcb-aaaf-4464-a894-79a7c5061cd5",
+		"name": "laravel-notification",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "39767761"
+	},
+	"item": [
+		{
+			"name": "index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/coops"
+			},
+			"response": []
+		},
+		{
+			"name": "store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "notify",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Penurunan HDP\",\r\n    \"device_token\":\"c1UjIgOTR9Swwl0hZo8U3O:APA91bH1rL9ewfDXCTtbKL1ItTPfaOJxR_6HkW6cAuWveGttN2zYK_oM2QQXTTlkuudRtcGdYBE-iPjcKS3-yBSLpV4mnPFtwUoyswNu2DTKOOiV_jIfFUk\",\r\n    \"message\": \"HDP menurun 5% selama periode pendek, segera periksa kandang anda\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BASE_URL}}/users/2/notify"
+			},
+			"response": []
+		},
+		{
+			"name": "index-notifications",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/users/2/notifications"
+			},
+			"response": []
+		},
+		{
+			"name": "mark-as-read",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "{{BASE_URL}}/users/1/notifications/read"
+			},
+			"response": []
+		}
+	]
+}
