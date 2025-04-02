@@ -1,0 +1,1 @@
+Catatannya ada di server pribadi discord di channel `inti-it`
